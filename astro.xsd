@@ -1,0 +1,191 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="astro">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element name="star">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element type="xs:int" name="weight"/>
+              <xs:element type="xs:string" name="type"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="system"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="terrestrial" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element type="xs:short" name="weight"/>
+              <xs:element type="xs:short" name="temperature"/>
+              <xs:element name="satellites" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="satellite" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:byte" name="weight"/>
+                          <xs:element type="xs:byte" name="period"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="artificial" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:byte" name="weight"/>
+                          <xs:element type="xs:byte" name="period"/>
+                          <xs:element type="xs:short" name="year"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ion_cannon" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:byte" name="weight"/>
+                          <xs:element type="xs:byte" name="period"/>
+                          <xs:element type="xs:short" name="year"/>
+                          <xs:element type="xs:byte" name="caliber"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="station" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:byte" name="weight"/>
+                          <xs:element type="xs:byte" name="period"/>
+                          <xs:element type="xs:short" name="year"/>
+                          <xs:element type="xs:short" name="capacity"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="system" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="habitable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element type="xs:short" name="weight"/>
+              <xs:element type="xs:byte" name="temperature"/>
+              <xs:element type="xs:short" name="population" minOccurs="0"/>
+              <xs:element name="satellites" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="satellite" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:byte" name="weight"/>
+                          <xs:element type="xs:byte" name="period"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="artificial" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:byte" name="weight"/>
+                          <xs:element type="xs:byte" name="period"/>
+                          <xs:element type="xs:short" name="year"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ion_cannon" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:byte" name="weight"/>
+                          <xs:element type="xs:byte" name="period"/>
+                          <xs:element type="xs:short" name="year"/>
+                          <xs:element type="xs:byte" name="caliber"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="station" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:byte" name="weight"/>
+                          <xs:element type="xs:byte" name="period"/>
+                          <xs:element type="xs:short" name="year"/>
+                          <xs:element type="xs:short" name="capacity"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="system" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="giant" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element type="xs:short" name="weight"/>
+              <xs:element type="xs:short" name="rings" minOccurs="0"/>
+              <xs:element type="xs:short" name="temperature" minOccurs="0"/>
+              <xs:element name="satellites" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="satellite" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:byte" name="weight"/>
+                          <xs:element type="xs:byte" name="period"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="artificial" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:byte" name="weight"/>
+                          <xs:element type="xs:byte" name="period"/>
+                          <xs:element type="xs:short" name="year"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ion_cannon" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:byte" name="weight"/>
+                          <xs:element type="xs:byte" name="period"/>
+                          <xs:element type="xs:short" name="year"/>
+                          <xs:element type="xs:byte" name="caliber"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="station" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:byte" name="weight"/>
+                          <xs:element type="xs:byte" name="period"/>
+                          <xs:element type="xs:short" name="year"/>
+                          <xs:element type="xs:short" name="capacity"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="system" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

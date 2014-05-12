@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<astro>
+	<star system="Solar">
+		<name>Sun</name>
+		<weight>1000000</weight>
+		<type>yellow dwarf</type>
+	</star>
+	<terrestrial system="Solar">
+		<name>Merury</name>
+		<weight>100</weight>
+		<temperature>61</temperature>
+		<satellites>
+			<satellite>
+				<name>Moon</name>
+				<weight>20</weight>
+				<period>2</period>
+			</satellite>
+			<artificial>
+				<name>Sputnik-1</name>
+				<weight>1</weight>
+				<period>2</period>
+				<year>1957</year>
+			</artificial>
+		</satellites>
+	</terrestrial>
+	<terrestrial system="Solar">
+		<name>Venus</name>
+		<weight>200</weight>
+		<temperature>464</temperature>
+		<satellites>
+			<satellite>
+				<name>Moon</name>
+				<weight>20</weight>
+				<period>2</period>
+			</satellite>
+			<artificial>
+				<name>Sputnik-1</name>
+				<weight>1</weight>
+				<period>2</period>
+				<year>1957</year>
+			</artificial>
+			<ion_cannon>
+				<name>GDA IC 1</name>
+				<weight>1</weight>
+				<period>3</period>
+				<year>1957</year>
+				<caliber>20</caliber>
+			</ion_cannon>
+			<station>
+				<name>Mir</name>
+				<weight>1</weight>
+				<period>4</period>
+				<year>2000</year>
+				<capacity>200</capacity>
+			</station>
+		</satellites>
+	</terrestrial>
+	<habitable system="Solar">
+		<name>Earth</name>
+		<weight>250</weight>
+		<temperature>14</temperature>
+		<population>7000</population>
+		<satellites>
+			<satellite>
+				<name>Moon</name>
+				<weight>20</weight>
+				<period>2</period>
+			</satellite>
+			<artificial>
+				<name>Sputnik-1</name>
+				<weight>1</weight>
+				<period>2</period>
+				<year>1957</year>
+			</artificial>
+			<ion_cannon>
+				<name>GDA IC 1</name>
+				<weight>1</weight>
+				<period>3</period>
+				<year>1957</year>
+				<caliber>20</caliber>
+			</ion_cannon>
+			<station>
+				<name>Mir</name>
+				<weight>1</weight>
+				<period>4</period>
+				<year>2000</year>
+				<capacity>200</capacity>
+			</station>
+		</satellites>
+	</habitable>
+	<terrestrial system="Solar">
+		<name>Mars</name>
+		<weight>180</weight>
+		<temperature>-63</temperature>
+	</terrestrial>
+	<giant system="Solar">
+		<name>Jupiter</name>
+		<weight>25000</weight>
+		<rings>20</rings>
+		<satellites>
+			<satellite>
+				<name>Moon</name>
+				<weight>20</weight>
+				<period>2</period>
+			</satellite>
+			<artificial>
+				<name>Sputnik-1</name>
+				<weight>1</weight>
+				<period>2</period>
+				<year>1957</year>
+			</artificial>
+			<ion_cannon>
+				<name>GDA IC 1</name>
+				<weight>1</weight>
+				<period>3</period>
+				<year>1957</year>
+				<caliber>20</caliber>
+			</ion_cannon>
+			<station>
+				<name>Mir</name>
+				<weight>1</weight>
+				<period>4</period>
+				<year>2000</year>
+				<capacity>200</capacity>
+			</station>
+		</satellites>
+	</giant>
+	<giant system="Solar">
+		<name>Saturnus</name>
+		<weight>20000</weight>
+		<rings>40</rings>
+	</giant>
+	<giant system="Solar">
+		<name>Uranus</name>
+		<weight>5000</weight>
+		<rings>100</rings>
+	</giant>
+	<giant system="Solar">
+		<name>Neptunus</name>
+		<weight>1000</weight>
+		<rings>200</rings>
+	</giant>
+	<terrestrial system="Solar">
+		<name>Pluto</name>
+		<weight>100</weight>
+		<temperature>-229</temperature>
+		<satellites>
+			<satellite>
+				<name>Charon</name>
+				<weight>10</weight>
+				<period>2</period>
+			</satellite>
+		</satellites>
+	</terrestrial>
+	<star system="Not Solar">
+		<name>Not sun</name>
+		<weight>100000000</weight>
+		<type>red dwarf</type>
+	</star>
+</astro>
